@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    /* variaveis */
+    --bg-color: #D0DFE6;
+    --text-color: #00082F;
+    --primary-color:#4264EB;
+    --primary-color-dark:#364FC7;
+  }
+  
+  body.dark-blue{
+    --bg-color:#00082F;
+    --text-color:#FFFFFF;
+  }
+  
+  body.dark-pink{
+    --bg-color:#1F000B;
+    --text-color: #FFFFFF;
+    --primary-color:#D6336C;
+    --primary-color-dark:#1F000B;
+  }
+  
+  body.pink{
+    --bg-color:#FFF0F6;
+    --text-color: #1F000B;
+    --primary-color:#D6336C;
+    --primary-color-dark:#A61E4D;
+  }
+  
+  body{
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .central{
+    text-align: center;
+    width: 300px;
+    margin: 60px auto 0px;
+    /* em cima, dos lados, em baixo */
+  }
+  
+  img{
+    width: 100%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: var(--primary-color) solid 4px;
+    padding: 3.7px;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 48px 0;
+  }
+  
+  h1{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 32px;
+    color: var(--text-color);
+  }
+  
+  p{
+   font-family: 'Roboto Mono', monospace;
+   color: var(--text-color);
+   opacity: 0.8;
+   font-size: 18px;
+   font-weight: 400;
+  }
+  
+  ul li a{
+    height: 53px;
+      /* destrava de atributos */
+    display: flex;
+    /* coloca o conteudo no meio da div */
+    align-items: center;
+    /* coloca o conteudo no meio do site */
+    justify-content: center;
+    background: var(--primary-color);
+    margin-bottom: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 6px;
+     transition: background 400ms;
+  }
+  
+  ul li a:hover{
+    background: var(--primary-color-dark);
+   
+  }
+  
+  footer{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-color);
+    opacity: 0.6;
+    transition: opacity 400ms;
+  }
+  
+  footer:hover{
+    opacity: 1;
+  }
+  footer a{
+    color: var(--text-color);
+  }
